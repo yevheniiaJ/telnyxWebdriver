@@ -1,14 +1,4 @@
 export const config = {
-
-    data: {
-        invalidDataSignUp: {
-            firstName: 'Peter',
-            lastName: "Petrenko",
-            companyEmail: 'testyuyu@gmail.com',
-            password: 'Qwerty!233ERw4'
-        }
-
-    },
     //
     // ====================
     // Runner Configuration
@@ -37,7 +27,6 @@ export const config = {
     exclude: [
         // 'path/to/excluded/files'
     ],
-   
     //
     // ============
     // Capabilities
@@ -120,7 +109,7 @@ export const config = {
     // Make sure you have the wdio adapter package for the specific framework installed
     // before running any tests.
     framework: 'mocha',
-
+    
     //
     // The number of times to retry the entire specfile when it fails as a whole
     // specFileRetries: 1,
@@ -134,16 +123,7 @@ export const config = {
     // Test reporter for stdout.
     // The only one supported by default is 'dot'
     // see also: https://webdriver.io/docs/dot-reporter
-    
-    reporters: [
-        'spec',
-        ['allure', {
-            outputDir: 'allure-results',
-            disableWebdriverStepsReporting: false,
-            disableWebdriverScreenshotsReporting: false,
-        }]
-    ],
-    
+    reporters: ['spec'],
 
     // Options to be passed to Mocha.
     // See the full list at http://mochajs.org/

@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//ul[@class='flex gap-xs ']/li[2]/a"
+}
