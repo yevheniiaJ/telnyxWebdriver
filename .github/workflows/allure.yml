@@ -23,7 +23,7 @@ jobs:
         run: npm install
 
       - name: Run WDIO tests
-        run: npx wdio wdio.chrome.conf.js
+        run: npx wdio run wdio.chrome.conf.js
 
       - name: Install Allure
         run: |
